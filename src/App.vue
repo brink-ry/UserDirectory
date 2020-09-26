@@ -5,7 +5,7 @@
   >
     <Header/>
     
-    <router-view class="lg:pt-48 pt-24"/>
+    <router-view class="lg:pt-48 pt-32"/>
 
     <Footer/>
   </div>
@@ -28,18 +28,5 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
