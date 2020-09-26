@@ -1,10 +1,7 @@
 <template>
   <div 
     id="app" 
-    class="container 
-          mx-auto 
-          bg-gray-500
-          font-serif"
+    class="container mx-auto bg-gray-100 font-serif"
   >
     <Header/>
     <div id="nav">
