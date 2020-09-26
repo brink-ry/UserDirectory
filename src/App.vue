@@ -5,7 +5,7 @@
   >
     <Header/>
     
-    <router-view class="lg:pt-48 pt-32"/>
+    <router-view class="pt-48"/>
 
     <Footer/>
   </div>
