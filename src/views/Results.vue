@@ -7,7 +7,11 @@
     />
 
     <section>
-      <Pagination :isDisabledPreviousPage="isDisabledPreviousPage" />
+      <Pagination
+        @next-page-event="getNextPage"
+        @previous-page-event="getPreviousPage"
+        :isDisabledPreviousPage="isDisabledPreviousPage"
+      />
     </section>
   </article>
 </template>
@@ -30,12 +34,26 @@ export default {
     }
   },
   methods: {
-    async getUsers () {
-      // TODO: put this in a try/catch block in case API call fails
-      const { data: { results } } = await axios.get(`https://randomuser.me/api/?page=${this.page}&results=10&seed=MST`);
+    async getNextPage () {
+      this.page += 1;
+      await this.getUsers();
+    },
+    async getPreviousPage () {
+      this.page -= 1;
+      if ( this.page <= 0 ) this.page = 1;
 
-      this.users = results;
-      console.log(this.users)
+      await this.getUsers();
+    },
+
+    async getUsers () {
+      try {
+
+        const { data: { results } } = await axios.get(`https://randomuser.me/api/?page=${this.page}&results=10&seed=MST`);
+
+        this.users = results;
+      } catch ( error ) {
+        throw error;
+      }
     }
   },
   computed: {
