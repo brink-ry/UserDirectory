@@ -20,7 +20,7 @@
 			class="text-center mx-auto my-16 w-40 h-16"
 			@click="clickResultsRoute"
 		>
-			<router-link id="viewResults" :to="{ name: 'Results' }">View Directory</router-link>
+			<router-link id="viewResults" :to="{ name: 'Results' }" class="font-semibold text-lg">View Directory</router-link>
 		</button>
 
 	</article>
