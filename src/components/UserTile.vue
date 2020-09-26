@@ -1,6 +1,19 @@
 <template>
   <article>
-    <p>{{ user.name.first }} {{ user.name.last }}</p>
+    <section class="img-wrapper">
+      <img
+        :src="user.picture.large"
+        :alt="`${user.name.first} ${user.name.last} Image`"
+      />
+    </section>
+
+    <section>
+      <p><strong>{{ user.name.first }} {{ user.name.last }}</strong></p>
+      <p>Age: {{ user.dob.age }}</p>
+      <p>Gender: {{ user.gender }}</p>
+      <p>Email: {{ user.email }}</p>
+      <p>Phone: {{ user.phone }}</p>
+    </section>
   </article>
 </template>
 
@@ -12,14 +25,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  data () {
-    return {
-
-    }
-  },
-  created () {
-    console.log(`created tile for ${this.user.name.first} ${this.user.name.last}`)
   }
 }
 </script>

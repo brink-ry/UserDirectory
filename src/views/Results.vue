@@ -2,7 +2,7 @@
   <article>
     <UserTile 
       v-for="user in users" 
-      :key="user.login.username"
+      :key="user.login.uuid"
       :user="user"
     />
 
