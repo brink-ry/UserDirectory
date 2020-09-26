@@ -1,9 +1,12 @@
 <template>
   <div
     @click="clickDownloadLink"
-    class="bg-blue-200 w-24 p-2 text-center inline-block download-wrapper"
+    class="bg-blue-200 lg:w-24 lg:fixed lg:h-24 mx-auto mb-4 lg:mt-8 p-2 rounded text-center cursor-pointer"
   >
-    <a id="csv-download" :href="downloadLink">Download CSV for Displayed Users</a>
+    <a 
+      id="csv-download" 
+      :href="downloadLink"
+    >Export Page to CSV</a>
   </div>
 </template>
 
@@ -29,9 +32,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.download-wrapper {
-  cursor: pointer;
-}
-</style>

@@ -1,13 +1,16 @@
 <template>
   <article>
+    <section class="flex lg:flex-row flex-col">
+
     <Export :page="page"/>
 
-    <section>
-      <UserTile 
-        v-for="user in users" 
-        :key="user.login.uuid"
-        :user="user"
-      />
+      <section class="lg:w-full mx-auto">
+        <UserTile 
+          v-for="user in users" 
+          :key="user.login.uuid"
+          :user="user"
+        />
+      </section>
     </section>
 
     <section>
