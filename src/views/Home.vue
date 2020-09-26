@@ -5,7 +5,7 @@
 		<section>
 			<h2>Welcome to the user directory.</h2>
 			<p>
-				This directory will display a paginated list of user data retrieved from the <a href="http://randomuser.me" target="blank">randomuser.me API</a>.
+				This directory will display a paginated list of user data retrieved from the <a href="http://randomuser.me" target="blank">Random User Generator API</a>.
 			</p>
 
 			<p>

@@ -46,14 +46,9 @@ export default {
     },
 
     async getUsers () {
-      try {
+      const { data: { results } } = await axios.get(`https://randomuser.me/api/?page=${this.page}&results=10&seed=MST`);
 
-        const { data: { results } } = await axios.get(`https://randomuser.me/api/?page=${this.page}&results=10&seed=MST`);
-
-        this.users = results;
-      } catch ( error ) {
-        throw error;
-      }
+      this.users = results;
     }
   },
   computed: {
