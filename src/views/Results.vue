@@ -1,10 +1,14 @@
 <template>
   <article>
-    <UserTile 
-      v-for="user in users" 
-      :key="user.login.uuid"
-      :user="user"
-    />
+    <Export :page="page"/>
+
+    <section>
+      <UserTile 
+        v-for="user in users" 
+        :key="user.login.uuid"
+        :user="user"
+      />
+    </section>
 
     <section>
       <Pagination
@@ -14,10 +18,7 @@
       />
     </section>
 
-    <section>
-      <Export :page="page"/>
-      <p>Page {{ page }}</p>
-    </section>
+    <p>Page {{ page }}</p>
   </article>
 </template>
 
