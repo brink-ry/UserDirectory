@@ -13,6 +13,10 @@
         :isDisabledPreviousPage="isDisabledPreviousPage"
       />
     </section>
+
+    <section>
+      <p>Page {{ page }}</p>
+    </section>
   </article>
 </template>
 
