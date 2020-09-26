@@ -1,24 +1,28 @@
 <template>
 	<article class="text-center">
-		<h2 class="text-xl">Welcome to the user directory.</h2>
-		<p>
-			This directory will display a paginated list of user data retrieved from the <a href="http://randomuser.me" target="blank">Random User Generator API</a>.
-		</p>
+		<section class="m-8">
+			<h2 class="text-2xl mb-8 lg:mb-16">Welcome to the User Directory</h2>
+			<p class="m-4">
+				This directory contains a paginated list of user data retrieved from the 
+					<a 
+						href="http://randomuser.me" 
+						target="blank"
+						class="text-blue-700 underline"
+					>Random User Generator API</a>.
+			</p>
 
-		<p>
-			You will be able to navigate through the user data.
-		</p>
-
-		<p>
-			Each page will have option to export the user data to a downloadable CSV file.
-		</p>
+			<p>
+				Each page will have option to export the user data to a downloadable CSV file.
+			</p>
+		</section>
 
 		<button 
-			class="text-center mx-auto"
+			class="text-center mx-auto my-16 w-40 h-16"
 			@click="clickResultsRoute"
 		>
 			<router-link id="viewResults" :to="{ name: 'Results' }">View Directory</router-link>
 		</button>
+
 	</article>
 </template>
 
