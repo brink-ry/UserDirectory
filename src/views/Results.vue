@@ -15,6 +15,7 @@
     </section>
 
     <section>
+      <Export :page="page"/>
       <p>Page {{ page }}</p>
     </section>
   </article>
@@ -24,12 +25,14 @@
 import axios from 'axios'
 import UserTile from '@/components/UserTile.vue'
 import Pagination from '@/components/Pagination.vue'
+import Export from '@/components/Export.vue'
 
 export default {
   name: 'Results',
   components: {
     UserTile,
-    Pagination
+    Pagination,
+    Export
   },
   data () {
     return {
