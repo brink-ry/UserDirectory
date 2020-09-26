@@ -1,5 +1,5 @@
 <template>
-  <article class="w-2/3 mx-auto mb-8 bg-blue-700 shadow-2xl rounded-md text-white">
+  <article class="lg:w-2/3 mx-auto mb-8 bg-blue-700 shadow-2xl rounded-md text-white">
     <section class="lg:w-5/6 mx-auto py-4 flex flex-col lg:flex-row">
       <div class="inline-block mx-auto">
         <img

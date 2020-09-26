@@ -8,7 +8,7 @@
       <router-link to="/">Home</router-link> | 
       <router-link to="/results">Results</router-link>
     </div>
-    <router-view class="pt-16"/>
+    <router-view class="lg:pt-16 pt-8"/>
     <Footer/>
   </div>
 </template>
