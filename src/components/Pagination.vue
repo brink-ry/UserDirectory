@@ -1,12 +1,16 @@
 <template>
   <div>
-    <nav>
+    <nav class="text-center mb-8">
       <button 
         @click="prevPage"
         :disabled="isDisabledPreviousPage"
+        class="mr-8 lg:mr-32"
       >Previous</button>
 
-      <button @click="nextPage">Next</button>
+      <button 
+        @click="nextPage"
+        class="ml-8 lg:ml-32"
+        >Next</button>
     </nav>
   </div>
 </template>
@@ -32,3 +36,19 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+button {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background: #2b6cb0;
+  padding: 4px;
+  width: 75px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+</style>

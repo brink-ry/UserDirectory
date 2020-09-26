@@ -21,7 +21,7 @@
       />
     </section>
 
-    <p>Page {{ page }}</p>
+    <p class="text-center"><strong>Page {{ page }}</strong></p>
   </article>
 </template>
 
