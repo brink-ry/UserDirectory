@@ -5,17 +5,23 @@
       :key="user.id.name"
       :user="user"
     />
+
+    <section>
+      <Pagination/>
+    </section>
   </article>
 </template>
 
 <script>
 import axios from 'axios'
-import UserTile from '../components/UserTile.vue'
+import UserTile from '@/components/UserTile.vue'
+import Pagination from '@/components/Pagination.vue'
 
 export default {
   name: 'Results',
   components: {
-    UserTile
+    UserTile,
+    Pagination
   },
   data () {
     return {
