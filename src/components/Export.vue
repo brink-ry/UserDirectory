@@ -21,12 +21,12 @@ export default {
   },
   computed: {
     downloadLink () {
-      return `https://randomuser.me/api/?page=${this.page}&results=10&seed=MST&format=csv&dl`
+      return `https://randomuser.me/api/?page=${ this.page }&results=10&seed=MST&format=csv&dl`
     }
   },
   methods: {
     clickDownloadLink () {
-      const anchorTarget = document.getElementById('csv-download');
+      const anchorTarget = document.getElementById( 'csv-download' );
       anchorTarget.click();
     }
   }

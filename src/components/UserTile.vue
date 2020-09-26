@@ -4,7 +4,7 @@
       <div class="inline-block mx-auto">
         <img
           :src="user.picture.large"
-          :alt="imageAltTag"
+          :alt="imgAltTag"
           class="rounded"
         />
       </div>
@@ -30,8 +30,8 @@ export default {
     }
   },
   computed: {
-    imageAltTag () {
-      return `${this.user.name.first} ${this.user.name.last} Image`;
+    imgAltTag () {
+      return `${ this.user.name.first } ${ this.user.name.last } Image`;
     }
   }
 }

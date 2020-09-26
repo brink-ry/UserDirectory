@@ -14,6 +14,7 @@
     </section>
 
     <section>
+      <!-- Using custom events emitted from Pagination component to watch for prev/next. -->
       <Pagination
         @next-page-event="getNextPage"
         @previous-page-event="getPreviousPage"
@@ -57,7 +58,7 @@ export default {
     },
 
     async getUsers () {
-      const { data: { results } } = await axios.get(`https://randomuser.me/api/?page=${this.page}&results=10&seed=MST`);
+      const { data: { results } } = await axios.get(`https://randomuser.me/api/?page=${ this.page }&results=10&seed=MST`);
 
       this.users = results;
     }

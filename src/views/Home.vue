@@ -12,7 +12,7 @@
 			</p>
 
 			<p>
-				Each page will have option to export the user data to a downloadable CSV file.
+				Each page will have an option to export the user data to a downloadable CSV file.
 			</p>
 		</section>
 

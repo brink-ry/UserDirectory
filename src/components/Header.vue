@@ -1,8 +1,8 @@
 <template>
   <header class="sticky-header bg-gray-100">
-    <div class="w-2/3 mx-auto lg:pb-8 pb-4">
-      <h1 class="text-2xl lg:text-4xl lg:text-left text-center pt-8 mb-4 lg:pt-12 font-semibold lg:inline-block">User Directory</h1>
-      <nav class="hidden lg:inline-block text-xl lg:text-2xl font-semibold lg:ml-20 text-center">
+    <div class="w-2/3 mx-auto pb-4 lg:pb-8">
+      <h1 class="text-2xl lg:text-4xl text-center lg:text-left font-semibold pt-8 lg:pt-12 mb-4 lg:inline-block">User Directory</h1>
+      <nav class="hidden lg:inline-block text-xl lg:text-2xl text-center font-semibold lg:ml-20">
        <router-link :to="{ name: 'Home' }">Home</router-link>
        <router-link class="ml-16" :to="{ name: 'Results' }">Users</router-link>
       </nav>

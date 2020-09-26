@@ -25,8 +25,8 @@ export default {
     }
   },
   methods: {
-    // Emit custom events for page navigation
-    // These will be caught by the parent component, which keeps track of the page #
+    // Emit custom events for page navigation.
+    // These will be caught by the parent component, which updates the page number.
     nextPage () {
       this.$emit( 'next-page-event' );
     },
