@@ -1,4 +1,12 @@
-# user-directory
+# User Directory
+
+**User Directory** is a Vue SPA that contains a directory of users.
+
+The users will be displayed in a paginated list, with ten users per page.
+
+Each page will have an option to download the displayed list of users to an exported CSV file.
+
+
 
 ## Project setup
 ```
@@ -14,11 +22,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
