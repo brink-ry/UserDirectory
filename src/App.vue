@@ -1,5 +1,11 @@
 <template>
-  <div id="app" class="container mx-auto bg-gray-500">
+  <div 
+    id="app" 
+    class="container 
+          mx-auto 
+          bg-gray-500
+          font-serif"
+  >
     <Header/>
     <div id="nav">
       <router-link to="/">Home</router-link> | 
@@ -25,11 +31,8 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
