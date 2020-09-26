@@ -1,5 +1,5 @@
 <template>
   <header>
-    <p>heres the header</p>
+    <h1>User Directory</h1>
   </header>
 </template>
