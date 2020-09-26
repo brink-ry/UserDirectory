@@ -1,16 +1,25 @@
 <template>
-  <article class="w-2/3 mx-auto">
+  <article
+    class="w-2/3
+          mx-auto
+          mb-8"
+  >
     <section 
       class="md:w-2/3 
-            mx-auto 
+            mx-auto
+            py-4
             bg-white 
             border-gray-200"
     >
       <div class="inline-block lg:mr-12">
         <img
           :src="user.picture.large"
-          :alt="`${user.name.first} ${user.name.last} Image`"
-          class="rounded-full shadow-xl"
+          :alt="imageAltTag"
+          class="rounded-full 
+                shadow-xl
+                border-solid
+                border-4
+                border-gray-700"
         />
       </div>
 
@@ -36,12 +45,17 @@ export default {
       type: Object,
       required: true
     }
+  },
+  computed: {
+    imageAltTag () {
+      return `${this.user.name.first} ${this.user.name.last} Image`;
+    }
   }
 }
 </script>
 
 <style scoped>
-* {
+p, section {
   border: 1px solid red;
 }
 </style>

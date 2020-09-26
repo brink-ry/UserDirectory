@@ -1,5 +1,5 @@
 <template>
   <footer>
-    <p>Created by Ryan</p>
+    <p>Built by Ryan</p>
   </footer>
 </template>
