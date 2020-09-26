@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/*  Common styles shared among components go here */
+button {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background: #2b6cb0;
+  padding: 4px;
+  width: 75px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

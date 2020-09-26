@@ -4,11 +4,9 @@
     class="container mx-auto bg-gray-100 font-sans"
   >
     <Header/>
-    <div id="nav">
-      <router-link to="/">Home</router-link> | 
-      <router-link to="/results">Results</router-link>
-    </div>
-    <router-view class="lg:pt-16 pt-8"/>
+    
+    <router-view class="lg:pt-48 pt-24"/>
+
     <Footer/>
   </div>
 </template>
