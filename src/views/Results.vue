@@ -1,16 +1,22 @@
 <template>
   <article>
-    <div v-for="user in users" :key="user.id.name">
-      <p>{{ user.name.first }} {{ user.name.last }}</p>
-    </div>
+    <UserTile 
+      v-for="user in users" 
+      :key="user.id.name"
+      :user="user"
+    />
   </article>
 </template>
 
 <script>
 import axios from 'axios'
+import UserTile from '../components/UserTile.vue'
 
 export default {
   name: 'Results',
+  components: {
+    UserTile
+  },
   data () {
     return {
       page: 1,
