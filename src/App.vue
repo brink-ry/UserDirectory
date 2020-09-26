@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container mx-auto bg-gray-500">
     <Header/>
     <div id="nav">
       <router-link to="/">Home</router-link> | 
