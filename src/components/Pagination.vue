@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav>
-      <button>Previous</button>
+      <button :disabled="isDisabledPreviousPage">Previous</button>
 
       <button>Next</button>
     </nav>
@@ -10,6 +10,12 @@
 
 <script>
 export default {
-  name: 'Pagination'
+  name: 'Pagination',
+  props: {
+    isDisabledPreviousPage: {
+      type: Boolean,
+      required: true
+    }
+  },
 }
 </script>

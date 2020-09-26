@@ -2,12 +2,12 @@
   <article>
     <UserTile 
       v-for="user in users" 
-      :key="user.id.name"
+      :key="user.login.username"
       :user="user"
     />
 
     <section>
-      <Pagination/>
+      <Pagination :isDisabledPreviousPage="isDisabledPreviousPage" />
     </section>
   </article>
 </template>
@@ -36,6 +36,11 @@ export default {
 
       this.users = results;
       console.log(this.users)
+    }
+  },
+  computed: {
+    isDisabledPreviousPage () {
+      return this.page == 1;
     }
   },
   async created () {
